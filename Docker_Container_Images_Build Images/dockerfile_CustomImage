@@ -17,3 +17,4 @@ EXPOSE 80
 
 # Last is the actual command to start up NGINX within our Container
 CMD [ "nginx", "-g", "daemon off;"]
+
