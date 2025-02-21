@@ -10,7 +10,7 @@ services:
         - APP_VERSION=12.0
     environment:
       - DEBUG=true
-    image: adegokebabatunde/python_web:3.12.5
+    image: adegokebabatunde/python_web:3.12.6
 
   node_service:
     build:
@@ -21,4 +21,4 @@ services:
         - APP_NAME=my-nodejs-app
     environment:
       - NODE_ENV=development
-    image: adegokebabatunde/node_web:20.17.0
+    image: adegokebabatunde/node_web:20.17.6
