@@ -1,0 +1,11 @@
+ARG BASE_NGINX
+WORKDIR /usr/share/nginx/html
+
+LABEL version="1.0.0"
+LABEL maintainer="adegoke"
+COPY index.html /usr/share/nginx/html/index.html
+
+EXPOSE 80
+
+# Last is the actual command to start up NGINX within our Container
+CMD [ "nginx", "-g", "daemon off;"]
